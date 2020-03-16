@@ -8,6 +8,29 @@
     <script type="text/javascript"> 
         $BV.configure('global', { productId : 'Product1' });
     </script>
+    <script type="application/ld+json">
+        {
+           "@context": "https://schema.org/",
+           "@type": "Product",
+           "name": "Executive Anvil",
+           "image": "http://www.example.com/anvil_executive.jpg",
+           "description": "Sleeker than ACME’s Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
+           "mpn": "925872",
+           "sku": "123456789",
+           "offers": {
+               "@type": "AggregateOffer",
+               "priceCurrency": "USD",
+               "highPrice": "149.99",
+               "lowPrice": "119.99",
+               "offerCount": "8"
+           },
+           "brand": {
+               "@type": "Thing",
+               "name": "ACME"
+           },
+           "@id": "Product1"
+       }
+    </script>
 </head>
 <body>
     <div id="BVRRSummaryContainer"></div>
