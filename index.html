@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-LD Demo Page</title>
+    <script src="//display-qa.ugc.bazaarvoice.com/static/firebird-ui-automation/seo_jsonld_testing/bvapi.js"></script>
+    <script type="text/javascript"> 
+        $BV.configure('global', { productId : 'Product1' });
+    </script>
+</head>
+<body>
+    <div id="BVRRSummaryContainer"></div>
+    <div id="BVRRContainer"></div>
+<script type="text/javascript">
+   $BV.ui( 'rr', 'show_reviews', {
+      doShowContent : function () { 
+         // If the container is hidden (such as behind a tab), put code here to make it visible 
+         //(open the tab).
+      }
+   });
+</script>
+</body>
+</html>
